@@ -1,0 +1,58 @@
+*,
+::before,
+::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  
+--bg-color: #1a1a19;
+--second-bg-color: #111111;
+--third-bg-color:#36454f;
+--main-color:  #00ffee;
+--text-color:white;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('./fonts/grotesk/Space.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+a:-webkit-any-link{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+body{
+  
+  background: linear-gradient(349deg, rgba(2,0,36,1) 0%, rgba(27,26,48,1) 16%, rgba(34,34,51,1) 42%, rgba(0,212,255,1) 100%);
+  color: var(--text-color);
+  font-size: 1.25rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+}
+
+button{
+  cursor: pointer;
+}
+
+textarea{
+  font-family: inherit;
+  resize: vertical;
+}

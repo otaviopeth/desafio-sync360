@@ -1,0 +1,156 @@
+.wrapper{
+  width: 80%;
+  margin: 0 auto;
+  opacity: 0.9;
+
+}
+
+.user-info-container {
+  height: 457.38px;
+  display: flex;
+  align-items: center;
+  background-color: var(--second-bg-color);
+  justify-content: center;
+  text-align: center;
+  border: 2px solid var(--third-bg-color);
+  border-bottom: none;
+  
+}
+
+#profile-username {
+  color: var(--main-color);
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 0.4em;
+}
+
+#profile-biography{
+  padding: 1.5em;
+  font-style: italic;
+  font-size: 1.3rem;
+  overflow-wrap: break-word;
+  display: none;
+}
+
+
+#profile-address{
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+#profile-pic {
+  width: 310px;
+  border-radius: 50%;
+  box-shadow: 0 0 12px var(--main-color);
+  transition: 0.3s linear;
+  &:hover{
+    box-shadow: 0 0 50px var(--main-color);
+  width: 320px;
+  }
+}
+
+
+#profile-age {
+  font-size: 1.5rem;
+  padding-bottom: 1em;
+  
+}
+
+.box-info{
+  width: 50%;
+  
+}
+
+.box-info-1{
+  padding: 1.5em;
+  
+}
+
+.box-info-2{
+  padding: 0 0.5em;
+  
+  
+}
+
+.box-info-2 textarea {
+  
+  width: 60%;
+  resize: none;
+  height: 100px;
+  padding: 3px;
+  font-size: 1rem;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  background-color: transparent;
+}
+
+
+
+@media screen and (max-width: 440px) {
+  .wrapper{
+    width: 100%;
+  }
+  .user-info-container {
+    height: initial;
+    flex-direction: column;
+    font-size: 1rem;
+    
+    border: none;
+    border-radius: 0;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+  }
+
+  #profile-pic{
+    width: 200px;
+
+  }
+  #username{
+    font-size: 1.5rem;
+  }
+
+  .box-info{
+    width:inherit;
+  }
+  .box-info-1{
+    background-color: inherit;
+    padding: 1em;
+  }
+
+  .box-info-2 textarea {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 441px) and (max-width: 768px) {
+  .wrapper{
+    width: 100%;
+  }
+  .user-info-container {
+    height: initial;
+    flex-direction: column;
+    border: 1px solid var(--third-bg-color);
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+  }
+  .box-info{
+    width:inherit;
+  }
+  .box-info-1{
+    background-color: inherit;
+    padding: 1em;
+  }
+
+  .box-info-2 textarea {
+    width: 100%;
+  }
+
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .wrapper {
+    width: 90%;
+  }
+}
