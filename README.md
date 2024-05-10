@@ -22,4 +22,4 @@ npm i
 npm run dev - por padrão será executado na porta 3000
 ```
 Observações: 
-O front-end não cria novos usuários, portanto o id do usuário está _hard coded_ como "1" já que no lado do servidor está sendo gerado apenas um usuário inicial. 
+O front-end nesse projeto não cria novos usuários, apenas edita, portanto o id do usuário está _hard coded_ como "1" já que no lado do servidor está sendo gerado apenas um usuário inicial. 
